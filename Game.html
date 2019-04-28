@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Reset-->
+    <link rel="stylesheet" href="Assets/CSS/reset.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="Assets/CSS/gamestyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hangman Game</h1>
+        </header>
+        <div class="container cont">
+            <label for="mySelect" style="font-size: 25px">Choose a categorie to start the game!</label>
+            <select id="mySelect" name="mySelect" class="custom-select custom-select-lg mb-3">
+                <option id= "choose" value="0">Select Category</option>
+                <option value="Heros">Heros</option>
+                <option value="Villains">Villains</option>
+            </select>
+            <button id="startplaying" onclick="goGame()" class="btn button">Play</button>
+            <button id="playagain" onclick="playagain()" class="btn button">Play Again</button>
+        </div>
+        <div class="underscore" id="underscore" name="underscore"></div>
+        <div class="container cont" id="hintdiv">
+        </div>
+        <div class="row" style="margin-top: 10%">
+            <div class="col-md-4">
+                <div class="rightguess">Points</div>
+                <div id="points" class="txt"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="container cont">
+                <h1 id="WinorLose" style="text-align: center"></h1>
+                </div>
+            </div> 
+            <div class="col-md-4">
+                <div class="wrongguess">Lives</div>
+                <div id="lives" class="txt"></div>
+            </div>
+        </div> 
+    </div>
+    <!--JS-->
+    <script type="text/javascript" src="Assets/JS/Functions.js"></script>
+</body>
+</html>

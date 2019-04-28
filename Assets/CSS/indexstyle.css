@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header{
+    font-size: 20px;
+    margin-top: 2%;
+    text-align: center;
+    width: auto;
+    color: white;
+}
+
+.cont{
+    margin-top:10%;
+    font-weight: bold;
+    color: white;
+}
+
+.button{
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .cont{
+        margin-top: 20%
+    }
+    
+}

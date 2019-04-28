@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Reset-->
+    <link rel="stylesheet" href="Assets/CSS/reset.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="Assets/CSS/indexstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12">
+                <h1 style="font-weight: bold">Hangman Game</h1>
+            </header>
+        </div>
+    </div>
+    <div class="container cont">
+        <label for="country" style="font-size: 25px">Choose a categorie to start the game!</label>
+        
+            <select id="mySelect" name="mySelect" class="custom-select custom-select-lg mb-3">
+                <option value="0">Select Category</option>
+                <option value="Heros">Heros</option>
+                <option value="Villains">Villains</option>
+            </select>
+        
+        <div class="row cont">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button id="go" onclick="goGame()"  class="btn btn-lg btn-block button" role="button">
+                    GO!!
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<!--JS-->
+<script type="text/javascript" src="Assets/JS/Functions.js"></script>
+</html>
